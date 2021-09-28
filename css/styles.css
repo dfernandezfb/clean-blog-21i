@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+header{
+  background-image: url('../assets/img/home-bg.jpg');
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+header::before{
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .5;
+  z-index: 0;
+}
+nav{
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+}
+.heading{
+  display: flex;
+  height: 89%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.heading h1,p,a{
+  z-index: 1;
+}
+.heading h1{
+  font-size: 80px;
+  font-weight: 900;
+}
+.heading p{
+  font-size: 20px;
+}
+.card img{
+  height: 300px;
+}
+
+@media screen and (max-width:592px){
+  .heading h1{
+    font-size: 50px;
+  }
+}
