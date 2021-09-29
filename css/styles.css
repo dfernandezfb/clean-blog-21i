@@ -1,17 +1,21 @@
-body{
+body {
   margin: 0;
+<<<<<<< Updated upstream
   font-family: 'Open Sans', sans-serif;
   color:tomato;
+=======
+  font-family: "Open Sans", sans-serif;
+>>>>>>> Stashed changes
 }
-header{
-  background-image: url('../assets/img/home-bg.jpg');
+header {
+  background-image: url("../assets/img/home-bg.jpg");
   height: 50vh;
   background-position: center;
   background-size: cover;
   color: white;
   position: relative;
 }
-header::before{
+header::before {
   content: "";
   position: absolute;
   width: 100vw;
@@ -19,38 +23,40 @@ header::before{
   top: 0;
   left: 0;
   background-color: black;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 0;
 }
-nav{
+nav {
   text-transform: uppercase;
   font-weight: 900;
-  color: white;
+  color: rgb(223, 0, 0);
 }
-.heading{
+.heading {
   display: flex;
   height: 89%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-.heading h1,p,a{
+.heading h1,
+p,
+a {
   z-index: 1;
 }
-.heading h1{
+.heading h1 {
   font-size: 80px;
   font-weight: 900;
 }
-.heading p{
+.heading p {
   font-size: 20px;
 }
-.card img{
+.card img {
   height: 300px;
 }
 
-@media screen and (max-width:592px){
-  .heading h1{
+@media screen and (max-width: 592px) {
+  .heading h1 {
     font-size: 50px;
   }
 }
